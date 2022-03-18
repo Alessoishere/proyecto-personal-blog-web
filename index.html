@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>MY B L O G</title>
+    <meta property="og:url" content="/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="MY B L O G" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="MY B L O G" />
+    <meta name="generator" content="Lauyan TOWeb 10.0.6.927">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="_scripts/bootstrap/css/bootstrap.flat.min.css"
+        rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Amatic+SC%7CAmatic+SC" rel="stylesheet">
+    <link href="_frame/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="_scripts/bootstrap/css/font-awesome.min.css">
+    <link rel="stylesheet" href="_scripts/leaflet/leaflet.css" />
+    <style>
+        .raty-comp {
+            padding: 8px 0;
+            font-size: 10px;
+            color: #FD9317
+        }
+
+        .tw-blogbar {
+            display: flex;
+            align-items: center
+        }
+
+        @media (max-width: 767px) {
+            .tw-blogbar {
+                flex-direction: column;
+            }
+        }
+
+        .alert a {
+            color: #003399
+        }
+
+        .ta-left {
+            text-align: left
+        }
+
+        .ta-center {
+            text-align: center
+        }
+
+        .ta-justify {
+            text-align: justify
+        }
+
+        .ta-right {
+            text-align: right
+        }
+
+        .float-l {
+            float: left
+        }
+
+        .float-r {
+            float: right
+        }
+
+        .flexobj {
+            flex-grow: 0;
+            flex-shrink: 0;
+            margin-right: 1em;
+            margin-left: 1em
+        }
+
+        .flexrow {
+            display: flex !important;
+            align-items: center
+        }
+
+        .flexrow-align-start {
+            align-items: start
+        }
+
+        @media (max-width:767px) {
+            .flexrow {
+                flex-direction: column
+            }
+
+            .flexrow-align-start {
+                align-items: center
+            }
+        }
+
+        .tw-para a.tw-lflnk:not(.btn) {
+            color: #000
+        }
+
+        .tw-para a.tw-lflnk:not(.btn):hover {
+            text-decoration: none
+        }
+
+        .tw-bkgimg-B0dqW6E1 {
+            z-index: 0;
+            position: relative;
+            overflow-y: hidden;
+            overflow-x: hidden;
+        }
+
+        .tw-bkgimg-B0dqW6E1::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: url("_media/img/medium/peskyaptgelada-mobile-online-video-cutter.com.gif");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            -webkit-filter: blur(5px);
+            filter: blur(5px);
+            background-attachment: fixed;
+        }
+
+        @media only screen and (max-width1024px) {
+            .tw-bkgimg-B0dqW6E1::before {
+                background-attachment: scroll;
+            }
+        }
+
+        .tw-bkgimg-Ubzo3h4q {
+            z-index: 0;
+            position: relative;
+            overflow-y: hidden;
+            overflow-x: hidden;
+            background-image: linear-gradient(to bottom, #C00, #C00);
+        }
+
+        .tw-bkgimg-Ubzo3h4q::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: url("_media/img/large/img5.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            -webkit-filter: blur(5px);
+            filter: blur(5px);
+        }
+
+        .tw-bkgimg-N72HXOSw {
+            z-index: 0;
+            position: relative;
+            overflow-y: hidden;
+            overflow-x: hidden;
+        }
+
+        .tw-bkgimg-N72HXOSw::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: url("_media/img/medium/whatsapp-video-2022-03-18-at-8.45.24-am.gif");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .tw-bkgimg-BDyxXlFY {
+            z-index: 0;
+            position: relative;
+            overflow-y: hidden;
+            overflow-x: hidden;
+        }
+
+        .tw-bkgimg-BDyxXlFY::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #933;
+        }
+
+        @media only screen and (max-width1024px) {
+            .tw-bkgimg-BDyxXlFY::before {
+                background-attachment: scroll;
+            }
+        }
+
+        .tw-bkgimg-Uj0TJZfI {
+            z-index: 0;
+            position: relative;
+            overflow-y: hidden;
+            overflow-x: hidden;
+            background-color: #800000;
+        }
+
+        .tw-bkgimg-Uj0TJZfI::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: url("_media/img/large/snapshot-11-288-21-2014-2-26-pm29.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        @media only screen and (max-width1024px) {
+            .tw-bkgimg-Uj0TJZfI::before {
+                background-attachment: scroll;
+            }
+        }
+
+        .tw-bkgimg-ckxqAPCu {
+            z-index: 0;
+            position: relative;
+            overflow-y: hidden;
+            overflow-x: hidden;
+        }
+
+        .tw-bkgimg-ckxqAPCu::before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #933;
+        }
+
+        @media only screen and (max-width1024px) {
+            .tw-bkgimg-ckxqAPCu::before {
+                background-attachment: scroll;
+            }
+        }
+    </style>
+    <link href="_frame/print.css" rel="stylesheet" type="text/css" media="print">
+</head>
+
+<body>
+    <div id="site">
+        <div id="page">
+            <header>
+                <div id="toolbar1" class="navbar">
+                    <div class="navbar-inner">
+                        <div class="container-fluid">
+                            <ul id="toolbar1_l" class="nav">
+                                <li><a id="logo" href="index.html" aria-label="logo"><span id="logo-lt">MY B L O
+                                            G</span><span id="logo-rt"></span><br><span id="logo-sl"></span></a></li>
+                            </ul><button type="button" class="btn btn-navbar" aria-label="Menú" data-toggle="collapse"
+                                data-target=".nav-collapse"><span class="icon-bar"></span><span
+                                    class="icon-bar"></span><span class="icon-bar"></span></button>
+                            <div class="nav-collapse collapse">
+                                <ul id="toolbar1_r" class="nav pull-right">
+                                    <li>
+                                        <ul id="mainmenu" class="nav">
+                                            <li class="active"><a href="index.html">Inicio</a></li>
+                                            <li><a href="my-lifetime.html">Álbum</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div id="content" class="container-fluid">
+                <div id="topic" class="row-fluid">
+                    <div id="topic-inner">
+                        <div id="top-content" class="span12">
+                            <div class="twpara-row row-fluid">
+                                <div id="B0dqW6E1"
+                                    class="span12 tw-para tw-parallax tw-flex tw-fullvh tw-bkgimg-B0dqW6E1 tw-wtxt"
+                                    style="display:flex">
+                                    <div class="ptext">
+                                        <h6>Alessandro&nbsp;</h6>
+                                        <h6>fernandez la rosa</h6>
+                                        <p>universidad andina del cusco</p>
+                                        <p><br></p>
+                                        <p><br></p>
+                                        <p><i class="fa fa-angle-down fa-5x "></i></p>
+                                        <h2><br></h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="twpara-row row-fluid">
+                                <div id="Ubzo3h4q"
+                                    class="span6 tw-para flexrow flexrow-align-start tw-parallax tw-flex tw-fullvh tw-bkgimg-Ubzo3h4q tw-wtxt spanx6"
+                                    style="display:flex">
+                                    <div class="pobj flexobj"><img class=" frm-simple2"
+                                            src="_media/img/medium/whatsapp-image-2022-03-18-at-8.32.41-am.jpeg"
+                                            srcset="_media/img/thumb/whatsapp-image-2022-03-18-at-8.32.41-am.jpeg 160w,_media/img/small/whatsapp-image-2022-03-18-at-8.32.41-am.jpeg 480w,_media/img/medium/whatsapp-image-2022-03-18-at-8.32.41-am.jpeg 768w,_media/img/large/whatsapp-image-2022-03-18-at-8.32.41-am.jpeg 1024w,_media/img/xlarge/whatsapp-image-2022-03-18-at-8.32.41-am.jpeg 900w"
+                                            style="max-width:100%;width:432px;" alt=""
+                                            title="nathan-dumlao-pmw4jzelqcw-unsplash" loading="lazy"></div>
+                                    <div>
+                                        <div class="ptext">
+                                            <h2><span style="line-height: 1.5;">QUIEN SOY?</span></h2>
+                                            <p>Soy una persona perseverante, estudiante de ingeniería de sistemas en la
+                                                universidad andina&nbsp;del cusco, tengo 19 años, me gusta&nbsp; viajar,
+                                                la fotografia,&nbsp;la musica y soy dj.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="N72HXOSw"
+                                    class="span6 tw-para tw-parallax tw-flex tw-fullvh tw-bkgimg-N72HXOSw tw-wtxt spanx6"
+                                    style="display:flex">
+                                    <div class="ptext">
+                                        <h2 style="text-align: right;"><span style="font-size:26px;">-la felicidad no
+                                                ocurre por casualidad sino por eleccion</span></h2>
+                                        <div style="text-align: right;"><br></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="twpara-row row-fluid">
+                                <div id="BDyxXlFY" class="span12 tw-para tw-parallax tw-bkgimg-BDyxXlFY tw-wtxt">
+                                    <h2 style="text-align:center">
+                                        <div><br></div>
+                                        <div>algunas caracteristicas personales</div>
+                                    </h2>
+                                    <div class="pobj obj-before"
+                                        style="display:flex;justify-content:center;flex-wrap:wrap;text-align:center;">
+                                        <div class="sobj" style="width:300px;margin:10px;border-radius:5px;">
+                                            <div
+                                                style="background:url('_media/img/small/whatsapp-image-2022-03-18-at-9.14.04-am.jpeg') no-repeat center;background-size:cover;width:100%;padding-top:100%;border-radius:5px;">
+                                            </div>
+                                            <div class="soverlay"
+                                                style="text-align:center;color:#000000;background:#ffffff;border-radius:5px;">
+                                                <div class="soverlay-text"><span
+                                                        style="width:100%;font-size:100%;">tengo a la persona
+                                                        perfecta</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="sobj" style="width:300px;margin:10px;border-radius:5px;">
+                                            <div
+                                                style="background:url('_media/img/small/whatsapp-image-2022-03-18-at-9.29.35-am.jpeg') no-repeat center;background-size:cover;width:100%;padding-top:100%;border-radius:5px;">
+                                            </div>
+                                            <div class="soverlay"
+                                                style="text-align:center;color:#000000;background:#ffffff;border-radius:5px;">
+                                                <div class="soverlay-text"><span
+                                                        style="width:100%;font-size:100%;">programacion</span></div>
+                                            </div>
+                                        </div>
+                                        <div class="sobj" style="width:300px;margin:10px;border-radius:5px;">
+                                            <div
+                                                style="background:url('_media/img/small/whatsapp-image-2022-03-18-at-9.41.28-am.jpeg') no-repeat center;background-size:cover;width:100%;padding-top:100%;border-radius:5px;">
+                                            </div>
+                                            <div class="soverlay"
+                                                style="text-align:center;color:#000000;background:#ffffff;border-radius:5px;">
+                                                <div class="soverlay-text"><span style="width:100%;font-size:100%;">EAT
+                                                        LIVE SLEEP REPEAT</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="twpara-row row-fluid">
+                                <div id="Uj0TJZfI" class="span12 tw-para tw-parallax tw-bkgimg-Uj0TJZfI tw-wtxt">
+                                    <h2 style="text-align:center">
+                                        <div><br></div>
+                                        <div>CANCIONES FAVORITAS</div>
+                                    </h2>
+                                    <div class="pobj obj-before"
+                                        style="display:flex;justify-content:center;flex-wrap:wrap;text-align:center;">
+                                        <div
+                                            style="width:120px;margin:10px;border-radius:50% 50% 0 0;background:hsl(180,20%,50%);">
+                                            <div
+                                                style="background:url('_media/img/thumb/08e53a9d403e6dc3813ea0f2382c8ba4-the-weeknd-glad.jpg') no-repeat center;background-size:cover;width:100%;padding-top:100%;border-radius:50%;">
+                                            </div>
+                                            <div style="padding:8px;text-align:center;color:#ffffff;"><span
+                                                    style="width:100%;font-size:100%;">ACQUAINTED<br></span></div>
+                                        </div>
+                                        <div
+                                            style="width:120px;margin:10px;border-radius:50% 50% 0 0;background:hsl(180,20%,50%);">
+                                            <div
+                                                style="background:url('_media/img/thumb/aeaecd9f7bf870a92ad5c37946d74f36-the-weeknd-lyrics.jpg') no-repeat center;background-size:cover;width:100%;padding-top:100%;border-radius:50%;">
+                                            </div>
+                                            <div style="padding:8px;text-align:center;color:#ffffff;"><span
+                                                    style="width:100%;font-size:100%;">TELL YOUR FRIENDS<br></span>
+                                            </div>
+                                        </div>
+                                        <div
+                                            style="width:120px;margin:10px;border-radius:50% 50% 0 0;background:hsl(180,20%,50%);">
+                                            <div
+                                                style="background:url('_media/img/thumb/114419046bf5f3c5ea3182e0464e2112.png') no-repeat center;background-size:cover;width:100%;padding-top:100%;border-radius:50%;">
+                                            </div>
+                                            <div style="padding:8px;text-align:center;color:#ffffff;"><span
+                                                    style="width:100%;font-size:100%;">IN THE NIGHT<br></span></div>
+                                        </div>
+                                        <div
+                                            style="width:120px;margin:10px;border-radius:50% 50% 0 0;background:hsl(180,20%,50%);">
+                                            <div
+                                                style="background:url('_media/img/thumb/images.jpg') no-repeat center;background-size:cover;width:100%;padding-top:100%;border-radius:50%;">
+                                            </div>
+                                            <div style="padding:8px;text-align:center;color:#ffffff;"><span
+                                                    style="width:100%;font-size:100%;">BEAUTY BEHIND THE MADNESS</span>
+                                            </div>
+                                        </div>
+                                        <div
+                                            style="width:120px;margin:10px;border-radius:50% 50% 0 0;background:hsl(180,20%,50%);">
+                                            <div
+                                                style="background:url('_media/img/thumb/tumblr-nuxd6ugssm1rsw9qno4-640.jpg') no-repeat center;background-size:cover;width:100%;padding-top:100%;border-radius:50%;">
+                                            </div>
+                                            <div style="padding:8px;text-align:center;color:#ffffff;"><span
+                                                    style="width:100%;font-size:100%;">PRISONER<br></span></div>
+                                        </div>
+                                        <div
+                                            style="width:120px;margin:10px;border-radius:50% 50% 0 0;background:hsl(180,20%,50%);">
+                                            <div
+                                                style="background:url('_media/img/thumb/the-weeknd-cant-feel-my-face-portada.jpg') no-repeat center;background-size:cover;width:100%;padding-top:100%;border-radius:50%;">
+                                            </div>
+                                            <div style="padding:8px;text-align:center;color:#ffffff;"><span
+                                                    style="width:100%;font-size:100%;">CAN´T FEEL MY FACE</span></div>
+                                        </div>
+                                        <div
+                                            style="width:120px;margin:10px;border-radius:50% 50% 0 0;background:hsl(180,20%,50%);">
+                                            <div
+                                                style="background:url('_media/img/thumb/53b683d1745abbe3cb631fdb611627ae.jpg') no-repeat center;background-size:cover;width:100%;padding-top:100%;border-radius:50%;">
+                                            </div>
+                                            <div style="padding:8px;text-align:center;color:#ffffff;"><span
+                                                    style="width:100%;font-size:100%;">THE HILLS</span></div>
+                                        </div>
+                                        <div
+                                            style="width:120px;margin:10px;border-radius:50% 50% 0 0;background:hsl(180,20%,50%);">
+                                            <div
+                                                style="background:url('_media/img/thumb/the-weeknd-i-feel-it-coming-portada.jpg') no-repeat center;background-size:cover;width:100%;padding-top:100%;border-radius:50%;">
+                                            </div>
+                                            <div style="padding:8px;text-align:center;color:#ffffff;"><span
+                                                    style="width:100%;font-size:100%;">I FEEL IT COMING<br></span></div>
+                                        </div>
+                                        <div
+                                            style="width:120px;margin:10px;border-radius:50% 50% 0 0;background:hsl(180,20%,50%);">
+                                            <div
+                                                style="background:url('_media/img/thumb/belly-what-you-want-portada.jpg') no-repeat center;background-size:cover;width:100%;padding-top:100%;border-radius:50%;">
+                                            </div>
+                                            <div style="padding:8px;text-align:center;color:#ffffff;"><span
+                                                    style="width:100%;font-size:100%;">WHAT YOU WANT</span></div>
+                                        </div>
+                                        <div
+                                            style="width:120px;margin:10px;border-radius:50% 50% 0 0;background:hsl(180,20%,50%);">
+                                            <div
+                                                style="background:url('_media/img/thumb/the-weeknd-after-hours-portada.jpg') no-repeat center;background-size:cover;width:100%;padding-top:100%;border-radius:50%;">
+                                            </div>
+                                            <div style="padding:8px;text-align:center;color:#ffffff;"><span
+                                                    style="width:100%;font-size:100%;">HEARTHLESS</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="twpara-row row-fluid">
+                                <div id="ckxqAPCu" class="span12 tw-para tw-parallax tw-bkgimg-ckxqAPCu tw-btxt">
+                                    <h2>donde vivo?</h2>
+                                    <div class="pobj obj-before" style="width:100%;margin-left:auto;margin-right:auto;">
+                                        <div class="lfmap" style="width:100%;height:300px" id="lfmap_ckxqAPCu"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div id="toolbar3" class="navbar">
+                    <div class="navbar-inner">
+                        <div class="container-fluid">
+                            <ul id="toolbar3_l" class="nav">
+                                <li>
+                                    <div id="sharebox"><a target="_blank" href="https://www.facebook.com/ALESSOISHERE"
+                                            rel="noopener"><img style="width:32px;height:32px"
+                                                src="_frame/tw-share-facebook@2x.png" alt="facebook"></a><a
+                                            target="_blank" href="https://www.twitter.com/ALESSOISHERE"
+                                            rel="noopener"><img style="width:32px;height:32px"
+                                                src="_frame/tw-share-twitter@2x.png" alt="twitter"></a><a
+                                            target="_blank" href="https://www.linkedin.com/in/" rel="noopener"><img
+                                                style="width:32px;height:32px" src="_frame/tw-share-linkedin@2x.png"
+                                                alt="linkedin"></a><a target="_blank" href="https://pinterest.com/"
+                                            rel="noopener"><img style="width:32px;height:32px"
+                                                src="_frame/tw-share-pinterest@2x.png" alt="pinterest"></a><a
+                                            target="_blank" href="https://www.youtube.com/" rel="noopener"><img
+                                                style="width:32px;height:32px" src="_frame/tw-share-youtube@2x.png"
+                                                alt="youtube"></a><a target="_blank"
+                                            onclick="javascript:return(decMail2(this));" href="znvygb?"
+                                            rel="noopener"><img style="width:32px;height:32px"
+                                                src="_frame/tw-share-mail@2x.png" alt="email"></a></div>
+                                </li>
+                            </ul>
+                            <ul id="toolbar3_r" class="nav pull-right"></ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="footerfat" class="row-fluid">
+                    <div class="row-fluid"></div>
+                </div>
+                <div id="footersmall" class="row-fluid">
+                    <div id="foot-sec1" class="span12 ">
+                        <div style="text-align: justify;">© Copyright ALESSANDRO FERNANDEZ LA ROSA. Todos los derechos
+                            reservados.</div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="_scripts/jquery/jquery.min.js"></script>
+    <script src="_scripts/bootstrap/js/bootstrap.min.js"></script>
+    <script src="_scripts/leaflet/leaflet.js"></script>
+    <script>function decMail2(e) { var s = "" + e.href, n = s.lastIndexOf("/"), w; if (s.substr(0, 7) == "mailto:") return (true); if (n > 0) s = s.substr(n + 1); s = s.replace("?", ":").replace("#", "@").replace(/[a-z]/gi, function (t) { return String.fromCharCode(t.charCodeAt(0) + (t.toLowerCase() < "n" ? 13 : -13)); }); e.href = s; return (true); } function onChangeSiteLang(href) { var i = location.href.indexOf("?"); if (i > 0) href += location.href.substr(i); document.location.href = href; }</script>
+    <script>$(document).ready(function () { var lfmap_ckxqAPCu = L.map("lfmap_ckxqAPCu").setView([-13.536964215446273, -71.95253009552113], 16); L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { attribution: "&copy; <a class='tw-lflnk' href='https://www.openstreetmap.org/' target='_blank'>OpenStreetMap</a> © <a class='tw-lflnk' href='https://www.mapbox.com/' target='_blank'>Mapbox</a>", id: "mapbox/streets-v11" }).addTo(lfmap_ckxqAPCu); lfmap_ckxqAPCu.scrollWheelZoom.disable(); var lfmkr_ckxqAPCu = L.marker([-13.536964215446273, -71.95253009552113]).addTo(lfmap_ckxqAPCu); lfmkr_ckxqAPCu.bindPopup("buenas buenas").openPopup(); if (location.href.indexOf("?") > 0 && location.href.indexOf("twtheme=no") > 0) { $("#toolbar1,#toolbar2,#toolbar3,#footersmall,#footerfat").hide(); var idbmk = location.href; idbmk = idbmk.substring(idbmk.lastIndexOf("#") + 1, idbmk.lastIndexOf("?")); if (idbmk != "") { idbmk = idbmk.split("?")[0]; if ($("#" + idbmk + "_container").length) idbmk += "_container"; $("html,body").animate({ scrollTop: $("#" + idbmk).offset().top }, 0); } } $(".lfmap").each(function () { $(this).find("a").each(function () { if ($(this).text() == "Leaflet") { $(this).attr("target", "_blank"); $(this).addClass("tw-lflnk"); $(this).attr("title", ""); } }); }); $("#site").prepend("<a href='javascript:void(0)' class='toTop' title='Arriba de la página'><i class='fa fa-angle-up fa-3x toTopLink'></i></a>"); var offset = 220; var duration = 500; $(window).scroll(function () { if ($(this).scrollTop() > offset) { $(".toTop").fadeIn(duration); } else { $(".toTop").fadeOut(duration); } }); $(".toTop").click(function (event) { event.preventDefault(); $("html, body").animate({ scrollTop: 0 }, duration); return (false); }); var s = document.location.href.toLowerCase(); if ((s.indexOf("file:")) < 0)  onTOWebPageLoaded(); });</script>
+</body>
+
+</html>
